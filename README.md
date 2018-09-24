@@ -2,6 +2,21 @@
  Tools that help web crawlers become less unstable
 
 
+
+## User Agent
+
+User Agent is a tool that works on behalf of the user and tells the server about which web browser the user is using for visiting the website.
+
+
+```
+user_agent = get_random_ua()
+headers = {
+        'user-agent': user_agent,
+    }
+
+r = requests.get('example.com',headers=headers)
+```
+
 ## Using Delays
 
 It’s always good to put some delay between requests, like below:
